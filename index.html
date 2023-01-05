@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Todo-App</title>
+</head>
+
+<body>
+    <div class="container">
+        <!--header-->
+        <div class="header">
+            <p>Todo-App</p>
+            <img class="todo__insert btn  " src="./assets/image/insert-icon.svg" alt="" onclick="toggleModal()">
+        </div>
+        <!--todo list -->
+        <ul class="todo__list">
+
+            <!--  <li class="list__none">
+                Henüz bir iş eklemediniz...
+            </li>-->
+        </ul>
+        <div class="todo__form" id="todoFormModal">
+            <form action="" id="addTodoForm">
+                <div class="form__body">
+
+                    <input class="form__control form__control-input" type="text" id="titleId" name="title" placeholder="Başlık">
+                    <textarea class="form__control form__control-textarea" name="desc" placeholder="Açıklama" id=""
+                        cols="30" rows="10"></textarea>
+                    <button class="btn btn-save" onclick="addTodos()">
+                        <img src="./assets/image/check.png" alt=""> KAYDET</button>
+
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
